@@ -1,0 +1,18 @@
+{
+  "name": "redacre-automation-task",
+  "version": "1.0.0",
+  "description": "A cypress automation project for the Redcare QA Task",
+  "main": "index.js",
+  "scripts": {
+    "AllTests-Headless": "npx cypress run",
+    "GUI-AllTests": "npx cypress run --headed",
+    "AllTests-chrome-Headless": "npx cypress run --browser chrome",
+    "GUI-AllTests-chrome": "npx cypress run --browser chrome --headed",
+    "AllTests-multi-browser": "npm run AllTests-Headless & npm run AllTests-chrome-Headless"
+  },
+  "author": "Mohamed Solaiman",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.4"
+  }
+}
