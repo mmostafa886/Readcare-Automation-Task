@@ -2,9 +2,9 @@
 
 ## Contents
 - [Testing Approach](#Testing-Approach).
-- Test Cases.
-- Findings.
-- Automation Task.
+- [Test Cases](#Test-Cases).
+- [Findings](#Findings).
+- [Automation Task](#Automation-Task).
 
 ## Testing Approach
 A full description of the 'Testing Approach' can be found [here](TaskDocumentation/Testing_Approach.pdf) in this pdf document.
