@@ -1,10 +1,10 @@
 # QA Practical Task
 
 ## Contents
-- [Testing Approach](#Testing-Approach).
-- [Test Cases](#Test-Cases).
-- [Findings](#Findings).
-- [Automation Task](#Automation-Task).
+- [Testing Approach](#Testing-Approach)
+- [Test Cases](#Test-Cases)
+- [Findings](#Findings)
+- [Automation Task](#Automation-Task)
 
 ## Testing Approach
 A full description of the 'Testing Approach' can be found [here](TaskDocumentation/Testing_Approach.pdf) in this pdf document.
@@ -17,16 +17,16 @@ A list of dingins with all the possible info can be found [here](TaskDocumentati
 
 ## Automation Task
 
-- As described in the shared "QA Parctical Task", it is requested to automate a "Business Requirement" at which (A customer is able to successfully add a product to cart via product details page) that can be accessed trhough the website (https://www.shop-apotheke.com/)
+- As described in the shared "QA Parctical Task", it is requested to automate a "Business Requirement" at which (A customer is able to successfully add a product to cart via product details page) that can be accessed trhough the website (https://www.shop-apotheke.com/).
 - ‘Cypress’ has been used as a web test automation framework using Javascript to prepare the needed Testcase(s).
 
 
 ### Environment Needs
 1.  Node.js
-2.  VSCode (IDE).
+2.  VSCode (IDE)
 3.  Cypress
 4.  Web browsers (at least one of: Chrome, Firefox, Edge)
-    And of course internet connectivity
+And of course Internet connection
 
 ### How to Run the scripts
 1.  On a local machine [OS independent]
