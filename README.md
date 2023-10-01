@@ -1,19 +1,19 @@
 # QA Practical Task
 
 ## Contents
-- Testing Approach.
+- [Testing Approach](#Testing-Approach).
 - Test Cases.
 - Findings.
 - Automation Task.
 
 ## Testing Approach
-A full description of the 'Testing Approach' can be found here in this pdf document.
+A full description of the 'Testing Approach' can be found [here](TaskDocumentation/Testing_Approach.pdf) in this pdf document.
 
 ## Test Cases
-A list of possible high level test cases & a detailed case sample can be found here in this pdf document.
+A list of possible high level test cases & a detailed case sample can be found [here](TaskDocumentation/TestCases.pdf) in this pdf document.
 
 ## Findings
-A list of dingins with all the possible info can be found here in this pdf document.
+A list of dingins with all the possible info can be found [here](TaskDocumentation/Findings.pdf) in this pdf document.
 
 ## Automation Task
 
