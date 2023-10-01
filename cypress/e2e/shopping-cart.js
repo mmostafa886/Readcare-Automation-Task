@@ -12,14 +12,13 @@ describe("Testing the behavior of the ShoppingCart Page", () => {
     });
   });
 
-  it.only('Adding random product to the "ShoppingCart"', () => {
+  it('Adding random product to the "ShoppingCart"', () => {
     HomePage_PO.visitHomePage();
     HomePage_PO.acceptAllCookies();
     ProductDetails_PO.verifyCartEmpty();
-    HomePage_PO.openRandomElementDetails();
+    HomePage_PO.openRandomElementDetails(); // using this, will get all the item in the page & select a random one from them
     // HomePage_PO.openProductDetails(); //using this, will select first item in the page
-    ProductDetails_PO.addToShoppingCart(); // using this, will get all the item in the page & select a random one from them
-
+    ProductDetails_PO.addToShoppingCart();
   });
 
   it("Verifyng the product info display in the ShoppingCart page", () => {
@@ -55,7 +54,6 @@ describe("Testing the behavior of the ShoppingCart Page", () => {
     ProductDetails_PO.selectProductAmount(amount);
   });
 
-
   //This TC is supposed to contain the logic for the 3 testcases together but it require more efforts --TBD--
   it.skip("Verify the functionality of the 3 TCs in one TC (NotCompleted)", () => {
     HomePage_PO.visitHomePage();
@@ -63,19 +61,7 @@ describe("Testing the behavior of the ShoppingCart Page", () => {
     ProductDetails_PO.verifyCartEmpty();
     HomePage_PO.openRandomElementDetails();
     // HomePage_PO.openProductDetails();
-
     const { amount } = productInfo;
     ProductDetails_PO.verifyTotalItemPrice(amount);
-  });
-
-  it("test", () => {
-    HomePage_PO.visitHomePage();
-    HomePage_PO.acceptAllCookies();
-    ProductDetails_PO.verifyCartEmpty();
-    HomePage_PO.openRandomElementDetails();
-
-
-    cy.wait(3500);
-
   });
 });
