@@ -12,13 +12,13 @@ describe("Testing the behavior of the ShoppingCart Page", () => {
     });
   });
 
-  it('Adding random product to the "ShoppingCart"', () => {
+  it.only('Adding random product to the "ShoppingCart"', () => {
     HomePage_PO.visitHomePage();
     HomePage_PO.acceptAllCookies();
     ProductDetails_PO.verifyCartEmpty();
     HomePage_PO.openRandomElementDetails();
-    // HomePage_PO.openProductDetails();
-    ProductDetails_PO.addToShoppingCart();
+    // HomePage_PO.openProductDetails(); //using this, will select first item in the page
+    ProductDetails_PO.addToShoppingCart(); // using this, will get all the item in the page & select a random one from them
 
   });
 
@@ -27,6 +27,10 @@ describe("Testing the behavior of the ShoppingCart Page", () => {
     HomePage_PO.acceptAllCookies();
     HomePage_PO.openRandomElementDetails();
     // HomePage_PO.openProductDetails();
+    /**
+     * At the following part, we are gettig the product info (name & price) from the product details page
+     * then, we compare them to same info displayed in the  shopping cart page in order to make sure that the right product info is displayed
+     */
     ProductDetails_PO.getProductTitleText().then((text1) => {
       ProductDetails_PO.getProductPriceText().then((text3) => {
         ProductDetails_PO.addToShoppingCart();
@@ -52,7 +56,7 @@ describe("Testing the behavior of the ShoppingCart Page", () => {
   });
 
 
-  //This TC is supposed to contain the logic for the 3 testcases but it require more efforts --TBD--
+  //This TC is supposed to contain the logic for the 3 testcases together but it require more efforts --TBD--
   it.skip("Verify the functionality of the 3 TCs in one TC (NotCompleted)", () => {
     HomePage_PO.visitHomePage();
     HomePage_PO.acceptAllCookies();
