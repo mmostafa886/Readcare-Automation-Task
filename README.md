@@ -26,10 +26,10 @@ A list of dingins with all the possible info can be found [here](TaskDocumentati
 2.  VSCode (IDE)
 3.  Cypress
 4.  Web browsers (at least one of: Chrome, Firefox, Edge)
-And of course Internet connection
+5.  And of course Internet connection
 
 ### How to Run the scripts
-1.  On a local machine [OS independent]
+- On your local machine
     1. Clone the repo code to a local folder.
     2. Open the terminal in this folder.
     3. Run the below command to install all the project dependencies: '$ npm install'
