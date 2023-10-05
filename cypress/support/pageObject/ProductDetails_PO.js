@@ -45,7 +45,6 @@ class ProductDetails_PO {
       .click();
     const count = parseInt(quantity, 10); //convert the quantity provided as an inputto the method to number in order to use for calculation
     this.getProductPriceText()
-      .as("itemPrice")
       .then((itemPrice) => {
         const priceNumberOlny = itemPrice.toString().replace(/[^\d,]/g, ""); //Remove any non numeric characters
         const price = parseFloat(priceNumberOlny.replace(",", ".")); // Converts "," to "." as a float in order to be able to use it for calculation

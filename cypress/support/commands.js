@@ -24,33 +24,11 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-// Cypress.Commands.add('getElementText', { prevSubject: true }, (subject) => {
-//     return cy.wrap(subject).invoke('text').then(text => {
-//       return text;
-//     });
-//   });
 
 Cypress.Commands.add('getElementText', (selector) => {
   return cy.get(selector).invoke('text').then(text => text.trim());
 });
 
-
-  Cypress.Commands.add('compareElementText', { prevSubject: true }, (subject1, subject2) => {
-    return cy.wrap(subject1).invoke('text').then(text1 => {
-      return cy.wrap(subject2).invoke('text').then(text2 => {
-        return text1.trim() === text2.trim();
-      });
-    });
-  });
-
-
-
-  Cypress.Commands.add('getTextAndStore', { prevSubject: true }, (subject) => {
-    return cy.wrap(subject).invoke('text').then(text => {
-      Cypress.env('elementText', text.trim()); // Store the text in a global variable
-      return text.trim(); // Return the text for immediate use
-    });
-  });
   
   
   
