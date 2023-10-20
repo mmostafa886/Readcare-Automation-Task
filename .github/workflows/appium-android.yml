@@ -32,7 +32,6 @@ jobs:
       uses: actions/setup-node@v3.8.1
       with: 
           node-version: '20.8.1'
-    - name: Setup Appium
     - run: |
         npm install -g appium
         appium -v
